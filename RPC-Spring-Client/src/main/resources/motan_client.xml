@@ -7,5 +7,5 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 
     <!-- reference to the remote service -->
     <motan:registry regProtocol="zookeeper" name="my_zookeeper" address="120.24.77.101:2181"/>
-    <motan:referer id="remoteService" interface="com.Jonas.open.Test.RpcService" directUrl="localhost:8002" registry="my_zookeeper"/>
+    <motan:referer id="remoteService" interface="com.Jonas.open.Test.IRpcService" directUrl="localhost:8002" registry="my_zookeeper"/>
 </beans>
